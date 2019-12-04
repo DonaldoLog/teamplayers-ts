@@ -13,7 +13,7 @@ import { NgForm } from '@angular/forms';
 })
 export class PlayerDialogComponent implements OnInit {
   @Input() player: Player;
-  @Output() closeDialog: EventEmitter<boolean> = new EventEmitter;
+  @Output() closeDialog: EventEmitter<boolean> = new EventEmitter();
   private team;
   public countries = Object.keys(Countries).map( key => ({label: key, key: Countries[key]}));
   public squadNumber = Object.keys(SquadNumber).slice(Object.keys(SquadNumber).length / 2).map( key => ({

@@ -35,7 +35,7 @@ export class PlayerTableComponent implements OnInit {
         players: [ ...moddifiedPlayers ]
       };
       this.playerService.deletePlayer(player.$key);
-      this.teamService.editTeam(formattedTeam)
+      this.teamService.editTeam(formattedTeam);
     });
   }
   newPlayer() {
@@ -46,7 +46,7 @@ export class PlayerTableComponent implements OnInit {
     }, 0);
   }
 
-  closeDialog(){
+  closeDialog() {
     this.showModal = false;
   }
 
